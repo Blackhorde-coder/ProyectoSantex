@@ -49,7 +49,7 @@ export class LoginPageComponent implements OnInit, OnDestroy {
         .subscribe(
           (res: any) => {
             this.authService.setUser(res);
-            this.router.navigateByUrl('/index');
+            this.router.navigateByUrl('/dashboard');
             
           },
           (err) => {
