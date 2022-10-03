@@ -34,10 +34,14 @@ module.exports = (sequelize, DataTypes) => {
       defaultValue: null,
       allowNull: true,
     },
+    role_id: {
+      type: DataTypes.INTEGER,
+      default: 1,
+      allowNull: false,
+    }
   }, {
     timestamps: true,
     tableName: 'users',
   });
-
   return user;
 };

@@ -25,9 +25,15 @@ const routes: Routes = [
     loadChildren: () => import('./modules/dog/dog.module').then(m => m.DogModule),
   },
   {
+ 
     path: 'index',
     canActivate: [LoggedInGuard],
     loadChildren: () => import('./modules/index/index.module').then(m => m.IndexModule),
+},
+{
+    path: 'encuesta',
+    canActivate: [LoggedInGuard],
+    loadChildren: () => import('./modules/encuesta/encuesta.module').then(m => m.EncuestaModule),
   },
   {
     path: '**',
