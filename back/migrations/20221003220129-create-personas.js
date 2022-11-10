@@ -80,4 +80,3 @@ module.exports = {
     await queryInterface.dropTable('tipoTrabajo');
   }
 };
-//asdasdasdasd 
